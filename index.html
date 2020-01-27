@@ -10,6 +10,8 @@
 	<link rel="shortcut icon" href="img/hestia-icon.png">
 	<link href="https://fonts.googleapis.com/css?family=Barlow:400,800" rel="stylesheet">
 	<link rel="stylesheet" type="text/css" href="css/base.css" />
+	<link rel="stylesheet" type="text/css" href="css/linkStyles.css" />
+
 	<style>
 		@font-face {
 			font-family: 'Hestia Font';
@@ -21,9 +23,10 @@
 		ul {
 			padding: 0;
 		}
-		.links li {
+		.links a{
+            color:white;
 			display: inline-block;
-			width: 130px;
+			min-width: 130px;
 			font-size: 1.1em;
 			letter-spacing: 1px;
 		}
@@ -32,6 +35,7 @@
 			text-align: center;
 		}
 	</style>
+
 	<script>
 		document.documentElement.className = "js";
 		var supportsCssVars = function() {
@@ -44,14 +48,27 @@
 
 <body class="demo-3">
 	<main>
+
+
 		<div style="position:absolute;top:35px;z-index:1000;width:100%;">
-			<ul class="links hestia-font" style="background-color:transparent !important">
-				<li>EVENTS</li>
-				<li>SPONSORS</li>
-				<li><img style="max-height: 75px;position:relative;top:25px" src="http://hestia-old.thameeem.com/assets/front/img/logo.png"></li>
-				<li>ABOUT</li>
-				<li>CONTACT</li>
-			</ul>
+
+
+
+
+			<section >
+			<nav class="links hestia-font cl-effect-1	" style="background-color:transparent !important">
+				<a>EVENTS</a>
+				<a>SPONSORS</a>
+				<a><img style="max-height: 75px;position:relative;top:25px" src="http://hestia-old.thameeem.com/assets/front/img/logo.png"></a>
+				<a>ABOUT</a>
+				<a>CONTACT</a>
+			</nav>
+			</section>
+
+
+
+
+
 			<div>
 				<p style="text-align:center;margin-top:40px;letter-spacing:1.5px;font-size:32px;" class="hestia-font content__subtitle">HESTIA 20</p>
 			</div>

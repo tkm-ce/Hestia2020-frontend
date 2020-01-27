@@ -1,34 +1,141 @@
-*,
-*:after,
-*::before {
-    -webkit-box-sizing: border-box;
-    -moz-box-sizing: border-box;
-    box-sizing: border-box;
+@import url(http://fonts.googleapis.com/css?family=Lato:300,400,700|Raleway:400,300,700);
+
+
+.container > header,
+.codrops-top {
+	font-family: 'Lato', Arial, sans-serif;
 }
 
-body {
-	font-family: 'Raleway', sans-serif;
+.container > header {
+	margin: 0 auto;
+	padding: 2em;
+	text-align: center;
+	color: #89867e;
 }
 
-nav a {
-	position: relative;
-	display: inline-block;
-	margin: 15px 25px;
-	outline: none;
-	color: #fff;
-	text-decoration: none;
+.container > header h1 {
+	font-size: 2.625em;
+	line-height: 1.3;
+	margin: 0;
+	font-weight: 300;
+}
+
+.container > header span {
+	display: block;
+	font-size: 60%;
+	color: #ceccc6;
+	padding: 0 0 0.6em 0.1em;
+}
+
+/* To Navigation Style */
+.codrops-top {
+	background: #fff;
+	background: rgba(255, 255, 255, 0.6);
 	text-transform: uppercase;
-	letter-spacing: 1px;
-	font-weight: 400;
-	text-shadow: 0 0 1px rgba(255,255,255,0.3);
-	font-size: 1.35em;
+	width: 100%;
+	font-size: 0.69em;
+	line-height: 2.2;
 }
 
-nav a:hover,
-nav a:focus {
-	outline: none;
+.codrops-top a {
+	text-decoration: none;
+	padding: 0 1em;
+	letter-spacing: 0.1em;
+	color: #888;
+	display: inline-block;
 }
 
+.codrops-top a:hover {
+	background: rgba(255,255,255,0.95);
+	color: #716d62;
+}
+
+.codrops-top span.right {
+	float: right;
+}
+
+.codrops-top span.right a {
+	float: left;
+	display: block;
+}
+
+.codrops-icon:before {
+	font-family: 'codropsicons';
+	margin: 0 4px;
+	speak: none;
+	font-style: normal;
+	font-weight: normal;
+	font-variant: normal;
+	text-transform: none;
+	line-height: 1;
+	-webkit-font-smoothing: antialiased;
+}
+
+.codrops-icon-drop:before {
+	content: "\e001";
+}
+
+.codrops-icon-prev:before {
+	content: "\e004";
+}
+
+.container > section {
+	margin: 0 auto;
+	padding: 10em 3em;
+	text-align: center;
+}
+
+.color-1 {
+	background: #435a6b;
+}
+
+.color-2 {
+	background: #f39c12;
+}
+
+.color-3 {
+	background: #2ac56c;
+}
+
+.color-4 {
+	background: #0e83cd;
+}
+
+.color-5 {
+	background: #cd4436;
+}
+
+.color-6 {
+	background: #f19f0f;
+}
+
+.color-7 {
+	background: #3fa46a;
+}
+
+.color-8 {
+	background: #ecf0f1;
+}
+
+.color-9 {
+	background: #9e487f;
+}
+
+.color-10 {
+	background: #16a085;
+}
+
+.color-11 {
+	background: #aab7b7;
+}
+
+@media screen and (max-width: 25em) {
+
+	.codrops-icon span {
+		display: none;
+	}
+
+}
 /* Effect 1: Brackets */
 .cl-effect-1 a::before,
 .cl-effect-1 a::after {
@@ -117,7 +224,7 @@ nav a:focus {
 
 .csstransforms3d .cl-effect-2 a:hover span::before,
 .csstransforms3d .cl-effect-2 a:focus span::before {
-	background: #28a2ee;	
+	background: #28a2ee;
 }
 
 /* Effect 3: bottom line slides/fades in */
@@ -252,7 +359,7 @@ nav a:focus {
 
 .cl-effect-6 a:hover::after {
 	height: 100%;
-} 
+}
 
 /* Effect 7: second border slides up */
 .cl-effect-7 a {
@@ -481,7 +588,7 @@ nav a:focus {
 	border-top: 2px solid #0972b4;
 	color: #0972b4;
 	text-shadow: none;
-} 
+}
 
 .cl-effect-11 a::before {
 	position: absolute;
@@ -875,7 +982,7 @@ nav a:focus {
 
 .csstransforms3d .cl-effect-19 a:hover span::before,
 .csstransforms3d .cl-effect-19 a:focus span::before {
-	background: #ef5e50;	
+	background: #ef5e50;
 }
 
 /* Effect 20: 3D side */
@@ -934,7 +1041,7 @@ nav a:focus {
 
 .cl-effect-20 a:hover span::before,
 .cl-effect-20 a:focus span::before {
-	-webkit-transform: rotateX(10deg);	
+	-webkit-transform: rotateX(10deg);
 	-moz-transform: rotateX(10deg);
 	transform: rotateX(10deg);
 }
