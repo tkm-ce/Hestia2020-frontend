@@ -149,6 +149,7 @@ a:focus {
 	position: relative;
 	margin: 0;
 	color: var(--color-subtitle);
+	z-index: 10;
 }
 
 .landscape {
