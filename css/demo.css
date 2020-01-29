@@ -475,7 +475,7 @@ a:focus {
 	text-decoration: line-through;
 }
 
-.box {
+/* .box {
 	max-width: 600px;
 	width: 100%;
 	font-size: 1.25em;
@@ -489,7 +489,7 @@ a:focus {
 .box--border {
 	padding: 2em 3em;
 	border: 2px solid;
-}
+} */
 
 .form {
 	width: 100%;

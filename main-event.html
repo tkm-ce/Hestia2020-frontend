@@ -1,213 +1,317 @@
 <!DOCTYPE html>
 <html lang="en" class="no-js">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link
+      href="https://fonts.googleapis.com/css?family=Anton|Niramit:400,600,700"
+      rel="stylesheet"
+    />
+    <title>
+      Events | Hestia 20 - National Level Techno-Cultural Fest of TKM
+    </title>
+    <meta
+      name="description"
+      content="Hestia 20 - National level Techno Cultural fest organized by TKM College of Engineering. Feb 27- March 1"
+    />
+    <meta
+      name="keywords"
+      content="hestia,hestia20,tkmce,hestiatkm,hestiatkmce,conjura,fest,event,technical,cultural,technocultural"
+    />
+    <link rel="shortcut icon" href="img/hestia-icon.png" />
+    <link rel="stylesheet" type="text/css" href="css/main-event.css" />
+    <link rel="stylesheet" type="text/css" href="css/linkStyles.css" />
+    <link rel="stylesheet" type="text/css" href="css/common.css" />
+    <script>
+      document.documentElement.className = "js";
+      var supportsCssVars = function() {
+        var e,
+          t = document.createElement("style");
+        return (
+          (t.innerHTML = "root: { --tmp-var: bold; }"),
+          document.head.appendChild(t),
+          (e = !!(
+            window.CSS &&
+            window.CSS.supports &&
+            window.CSS.supports("font-weight", "var(--tmp-var)")
+          )),
+          t.parentNode.removeChild(t),
+          e
+        );
+      };
+      supportsCssVars() ||
+        alert(
+          "Please view this demo in a modern browser that supports CSS Variables."
+        );
+    </script>
+    <style>
+      .box__shadow {
+        position: absolute;
+        width: 100%;
+        height: 100%;
+        top: -1rem;
+        left: -1rem;
+        background: url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAoAAAAKCAYAAACNMs+9AAAAOklEQVQoU43MSwoAMAgD0eT+h7ZYaOlHo7N+DNHL2HAGgBWcyGcKbqTghTL4oQiG6IUpOqFEC5bI4QD8PAoKd9j4XwAAAABJRU5ErkJggg==);
+      }
 
-<head>
-	<meta charset="UTF-8" />
-	<meta name="viewport" content="width=device-width, initial-scale=1">
-	<link href="https://fonts.googleapis.com/css?family=Anton|Niramit:400,600,700" rel="stylesheet">
-	<title>Events | Hestia 20 - National Level Techno-Cultural Fest of TKM</title>
-	<meta name="description" content="Hestia 20 - National level Techno Cultural fest organized by TKM College of Engineering. Feb 27- March 1">
-	<meta name="keywords" content="hestia,hestia20,tkmce,hestiatkm,hestiatkmce,conjura,fest,event,technical,cultural,technocultural">
-	<link rel="shortcut icon" href="img/hestia-icon.png">
-	<link rel="stylesheet" type="text/css" href="css/main-event.css" />
-	<link rel="stylesheet" type="text/css" href="css/linkStyles.css" />
-	<link rel="stylesheet" type="text/css" href="css/common.css" />
-	<script>
-		document.documentElement.className = "js";
-		var supportsCssVars = function() {
-			var e, t = document.createElement("style");
-			return t.innerHTML = "root: { --tmp-var: bold; }", document.head.appendChild(t), e = !!(window.CSS && window.CSS.supports && window.CSS.supports("font-weight", "var(--tmp-var)")), t.parentNode.removeChild(t), e
-		};
-		supportsCssVars() || alert("Please view this demo in a modern browser that supports CSS Variables.");
-	</script>
-	<style>
-		.box__shadow {
-			position: absolute;
-			width: 100%;
-			height: 100%;
-			top: -1rem;
-			left: -1rem;
-			background: url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAoAAAAKCAYAAACNMs+9AAAAOklEQVQoU43MSwoAMAgD0eT+h7ZYaOlHo7N+DNHL2HAGgBWcyGcKbqTghTL4oQiG6IUpOqFEC5bI4QD8PAoKd9j4XwAAAABJRU5ErkJggg==);
-		}
+      .box__img {
+        display: block;
+        flex: none;
+        margin: 0 auto;
+        max-width: 100%;
+        filter: grayscale(1);
+        transition: filter 0.3s;
+        pointer-events: none;
+      }
 
-		.box__img {
-			display: block;
-			flex: none;
-			margin: 0 auto;
-			max-width: 100%;
-			filter: grayscale(1);
-			transition: filter 0.3s;
-			pointer-events: none;
-		}
+      .grid__item:hover .box__img:not(.box__img--original) {
+        filter: grayscale(0);
+      }
 
-		.grid__item:hover .box__img:not(.box__img--original) {
-			filter: grayscale(0);
-		}
+      .box__img--original {
+        max-height: calc(100vh - 10rem);
+        filter: none;
+      }
+    </style>
+  </head>
 
-		.box__img--original {
-			max-height: calc(100vh - 10rem);
-			filter: none;
-		}
-	</style>
-</head>
-
-<body class="loading">
-	<svg class="hidden">
-		<symbol id="icon-arrow" viewBox="0 0 24 24">
-			<title>arrow</title>
-			<polygon points="6.3,12.8 20.9,12.8 20.9,11.2 6.3,11.2 10.2,7.2 9,6 3.1,12 9,18 10.2,16.8 " />
-		</symbol>
-	</svg>
-	<main>
-
-		<div style="z-index:1000;width:100%;">
-
-			<section>
-				<nav class="links hestia-font cl-effect-1	" style="background-color:transparent !important">
-					<a>EVENTS</a>
-					<a>SPONSORS</a>
-					<a><img style="max-height: 75px;position:relative;top:25px" src="img/logo.png"></a>
-					<a>ABOUT</a>
-					<a>CONTACT</a>
-				</nav>
-			</section>
-
-		</div>
-		<nav class="menu">
-			<div class="menu__item">
-				<span class="menu__item-number">01</span>
-				<span class="menu__item-textwrap"><span class="menu__item-text">Technical</span></span>
-				<a class="menu__item-link">Explore</a>
-			</div>
-			<div class="menu__item">
-				<span class="menu__item-number">02</span>
-				<span class="menu__item-textwrap"><span class="menu__item-text">Cultural</span></span>
-				<a class="menu__item-link">Explore</a>
-			</div>
-			<div class="menu__item">
-				<span class="menu__item-number">03</span>
-				<span class="menu__item-textwrap"><span class="menu__item-text">Workshops</span></span>
-				<a class="menu__item-link">Explore</a>
-			</div>
-			<div class="menu__item">
-				<span class="menu__item-number">04</span>
-				<span class="menu__item-textwrap"><span class="menu__item-text">Online</span></span>
-				<a class="menu__item-link">Explore</a>
-			</div>
-			<div class="menu__item">
-				<span class="menu__item-number">05</span>
-				<span class="menu__item-textwrap"><span class="menu__item-text">General</span></span>
-				<a class="menu__item-link">Explore</a>
-			</div>
-		</nav>
-		<div class="page page--preview">
-			<div class="gridwrap">
-				<div class="grid grid--layout-1">
-					<a class="grid__item" href="">
-						<div class="box">
-							<div class="box__shadow"></div>
-							<img class="box__img" src="img/event-listing/4.jpg" alt="Some image" />
-							<h3 class="hestia-font box__title"><span class="box__title-inner" data-hover="Jack">BIG{O} | CSE</span></h3>
-						</div>
-					</a>
-					<a class="grid__item" href="">
-						<div class="box">
-							<div class="box__shadow"></div>
-							<img class="box__img" src="img/event-listing/10.jpg" alt="Some image" />
-							<h3 class="hestia-font box__title"><span class="box__title-inner" data-hover="Jack">COMCADRE | MCA</span></h3>
-						</div>
-					</a>
-				</div>
-				<div class="grid grid--layout-2">
-					<a class="grid__item" href="">
-						<div class="box">
-							<div class="box__shadow"></div>
-							<img class="box__img" src="img/event-listing/4.jpg" alt="Some image" />
-							<h3 class="hestia-font box__title"><span class="box__title-inner" data-hover="Jack">BIG{O} | CSE</span></h3>
-						</div>
-					</a>
-					<a class="grid__item" href="">
-						<div class="box">
-							<div class="box__shadow"></div>
-							<img class="box__img" src="img/event-listing/10.jpg" alt="Some image" />
-							<h3 class="hestia-font box__title"><span class="box__title-inner" data-hover="Jack">COMCADRE | MCA</span></h3>
-						</div>
-					</a>
-				</div>
-				<div class="grid grid--layout-3">
-					<a class="grid__item" href="">
-						<div class="box">
-							<div class="box__shadow"></div>
-							<img class="box__img" src="img/event-listing/4.jpg" alt="Some image" />
-							<h3 class="hestia-font box__title"><span class="box__title-inner" data-hover="Jack">BIG{O} | CSE</span></h3>
-						</div>
-					</a>
-					<a class="grid__item" href="">
-						<div class="box">
-							<div class="box__shadow"></div>
-							<img class="box__img" src="img/event-listing/10.jpg" alt="Some image" />
-							<h3 class="hestia-font box__title"><span class="box__title-inner" data-hover="Jack">COMCADRE | MCA</span></h3>
-						</div>
-					</a>
-				</div>
-				<div class="grid grid--layout-4">
-					<a class="grid__item" href="">
-						<div class="box">
-							<div class="box__shadow"></div>
-							<img class="box__img" src="img/event-listing/4.jpg" alt="Some image" />
-							<h3 class="hestia-font box__title"><span class="box__title-inner" data-hover="Jack">BIG{O} | CSE</span></h3>
-						</div>
-					</a>
-					<a class="grid__item" href="">
-						<div class="box">
-							<div class="box__shadow"></div>
-							<img class="box__img" src="img/event-listing/10.jpg" alt="Some image" />
-							<h3 class="hestia-font box__title"><span class="box__title-inner" data-hover="Jack">COMCADRE | MCA</span></h3>
-						</div>
-					</a>
-				</div>
-				<div class="grid grid--layout-5">
-					<a class="grid__item" href="">
-						<div class="box">
-							<div class="box__shadow"></div>
-							<img class="box__img" src="img/event-listing/11.jpg" alt="Some image" />
-							<h3 class="hestia-font box__title"><span class="box__title-inner" data-hover="Jack">BIG{O} | CSE</span></h3>
-						</div>
-					</a>
-					<a class="grid__item" href="">
-						<div class="box">
-							<div class="box__shadow"></div>
-							<img class="box__img" src="img/event-listing/12.jpg" alt="Some image" />
-							<h3 class="hestia-font box__title"><span class="box__title-inner" data-hover="Jack">COMCADRE | MCA</span></h3>
-						</div>
-					</a>
-				</div>
-				<button class="gridback"><svg class="icon icon--arrow">
-						<use xlink:href="#icon-arrow"></use>
-					</svg></button>
-			</div><!-- /gridwrap -->
-			<div class="content">
-				<div class="content__item">
-
-				</div>
-				<div class="content__item">
-
-				</div>
-				<div class="content__item">
-
-				</div>
-				<div class="content__item">
-
-				</div>
-				<div class="content__item">
-
-				</div>
-			</div>
-		</div><!-- /page -->
-	</main>
-	<script src="js/main-event/imagesloaded.pkgd.min.js"></script>
-	<script src="js/main-event/TweenMax.min.js"></script>
-	<script src="js/main-event/main.js"></script>
-</body>
-
+  <body class="loading">
+    <svg class="hidden">
+      <symbol id="icon-arrow" viewBox="0 0 24 24">
+        <title>arrow</title>
+        <polygon
+          points="6.3,12.8 20.9,12.8 20.9,11.2 6.3,11.2 10.2,7.2 9,6 3.1,12 9,18 10.2,16.8 "
+        />
+      </symbol>
+    </svg>
+    <main>
+      <div style="z-index:1000;width:100%;">
+        <section>
+          <a
+            ><img
+              style="max-height: 75px;position:relative;top:25px;left: 40px"
+              src="img/logo.png"
+          /></a>
+        </section>
+      </div>
+      <nav class="menu">
+        <div class="menu__item">
+          <span class="menu__item-number">01</span>
+          <span class="menu__item-textwrap"
+            ><span class="menu__item-text">Technical</span></span
+          >
+          <a class="menu__item-link">Explore</a>
+        </div>
+        <div class="menu__item">
+          <span class="menu__item-number">02</span>
+          <span class="menu__item-textwrap"
+            ><span class="menu__item-text">Cultural</span></span
+          >
+          <a class="menu__item-link">Explore</a>
+        </div>
+        <div class="menu__item">
+          <span class="menu__item-number">03</span>
+          <span class="menu__item-textwrap"
+            ><span class="menu__item-text">Workshops</span></span
+          >
+          <a class="menu__item-link">Explore</a>
+        </div>
+        <div class="menu__item">
+          <span class="menu__item-number">04</span>
+          <span class="menu__item-textwrap"
+            ><span class="menu__item-text">Online</span></span
+          >
+          <a class="menu__item-link">Explore</a>
+        </div>
+        <div class="menu__item">
+          <span class="menu__item-number">05</span>
+          <span class="menu__item-textwrap"
+            ><span class="menu__item-text">General</span></span
+          >
+          <a class="menu__item-link">Explore</a>
+        </div>
+      </nav>
+      <div class="page page--preview">
+        <div class="gridwrap">
+          <div class="grid grid--layout-1">
+            <a class="grid__item" href="">
+              <div class="box">
+                <div class="box__shadow"></div>
+                <img
+                  class="box__img"
+                  src="img/event-listing/4.jpg"
+                  alt="Some image"
+                />
+                <h3 class="hestia-font box__title">
+                  <span class="box__title-inner" data-hover="Jack"
+                    >BIG{O} | CSE</span
+                  >
+                </h3>
+              </div>
+            </a>
+            <a class="grid__item" href="">
+              <div class="box">
+                <div class="box__shadow"></div>
+                <img
+                  class="box__img"
+                  src="img/event-listing/10.jpg"
+                  alt="Some image"
+                />
+                <h3 class="hestia-font box__title">
+                  <span class="box__title-inner" data-hover="Jack"
+                    >COMCADRE | MCA</span
+                  >
+                </h3>
+              </div>
+            </a>
+          </div>
+          <div class="grid grid--layout-2">
+            <a class="grid__item" href="">
+              <div class="box">
+                <div class="box__shadow"></div>
+                <img
+                  class="box__img"
+                  src="img/event-listing/4.jpg"
+                  alt="Some image"
+                />
+                <h3 class="hestia-font box__title">
+                  <span class="box__title-inner" data-hover="Jack"
+                    >BIG{O} | CSE</span
+                  >
+                </h3>
+              </div>
+            </a>
+            <a class="grid__item" href="">
+              <div class="box">
+                <div class="box__shadow"></div>
+                <img
+                  class="box__img"
+                  src="img/event-listing/10.jpg"
+                  alt="Some image"
+                />
+                <h3 class="hestia-font box__title">
+                  <span class="box__title-inner" data-hover="Jack"
+                    >COMCADRE | MCA</span
+                  >
+                </h3>
+              </div>
+            </a>
+          </div>
+          <div class="grid grid--layout-3">
+            <a class="grid__item" href="">
+              <div class="box">
+                <div class="box__shadow"></div>
+                <img
+                  class="box__img"
+                  src="img/event-listing/4.jpg"
+                  alt="Some image"
+                />
+                <h3 class="hestia-font box__title">
+                  <span class="box__title-inner" data-hover="Jack"
+                    >BIG{O} | CSE</span
+                  >
+                </h3>
+              </div>
+            </a>
+            <a class="grid__item" href="">
+              <div class="box">
+                <div class="box__shadow"></div>
+                <img
+                  class="box__img"
+                  src="img/event-listing/10.jpg"
+                  alt="Some image"
+                />
+                <h3 class="hestia-font box__title">
+                  <span class="box__title-inner" data-hover="Jack"
+                    >COMCADRE | MCA</span
+                  >
+                </h3>
+              </div>
+            </a>
+          </div>
+          <div class="grid grid--layout-4">
+            <a class="grid__item" href="">
+              <div class="box">
+                <div class="box__shadow"></div>
+                <img
+                  class="box__img"
+                  src="img/event-listing/4.jpg"
+                  alt="Some image"
+                />
+                <h3 class="hestia-font box__title">
+                  <span class="box__title-inner" data-hover="Jack"
+                    >BIG{O} | CSE</span
+                  >
+                </h3>
+              </div>
+            </a>
+            <a class="grid__item" href="">
+              <div class="box">
+                <div class="box__shadow"></div>
+                <img
+                  class="box__img"
+                  src="img/event-listing/10.jpg"
+                  alt="Some image"
+                />
+                <h3 class="hestia-font box__title">
+                  <span class="box__title-inner" data-hover="Jack"
+                    >COMCADRE | MCA</span
+                  >
+                </h3>
+              </div>
+            </a>
+          </div>
+          <div class="grid grid--layout-5">
+            <a class="grid__item" href="">
+              <div class="box">
+                <div class="box__shadow"></div>
+                <img
+                  class="box__img"
+                  src="img/event-listing/11.jpg"
+                  alt="Some image"
+                />
+                <h3 class="hestia-font box__title">
+                  <span class="box__title-inner" data-hover="Jack"
+                    >BIG{O} | CSE</span
+                  >
+                </h3>
+              </div>
+            </a>
+            <a class="grid__item" href="">
+              <div class="box">
+                <div class="box__shadow"></div>
+                <img
+                  class="box__img"
+                  src="img/event-listing/12.jpg"
+                  alt="Some image"
+                />
+                <h3 class="hestia-font box__title">
+                  <span class="box__title-inner" data-hover="Jack"
+                    >COMCADRE | MCA</span
+                  >
+                </h3>
+              </div>
+            </a>
+          </div>
+          <button class="gridback">
+            <svg class="icon icon--arrow">
+              <use xlink:href="#icon-arrow"></use>
+            </svg>
+          </button>
+        </div>
+        <!-- /gridwrap -->
+        <div class="content">
+          <div class="content__item"></div>
+          <div class="content__item"></div>
+          <div class="content__item"></div>
+          <div class="content__item"></div>
+          <div class="content__item"></div>
+        </div>
+      </div>
+      <!-- /page -->
+    </main>
+    <script src="js/main-event/imagesloaded.pkgd.min.js"></script>
+    <script src="js/main-event/TweenMax.min.js"></script>
+    <script src="js/main-event/main.js"></script>
+  </body>
 </html>
