@@ -625,7 +625,7 @@ a:focus {
 	margin: 0 0 1em 0;
 }
 
-.overlay {
+/* .overlay {
 	position: fixed;
 	width: 100%;
 	height: 100vh;
@@ -635,12 +635,12 @@ a:focus {
 	opacity: 0;
 	pointer-events: none;
 	transition: opacity 0.4s;
-}
+} */
 
-.modal--open + .overlay {
+/* .modal--open + .overlay {
 	pointer-events: visible;
 	opacity: 1;
-}
+} */
 
 .dual {
 	width: 90vw;
