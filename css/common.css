@@ -30,10 +30,11 @@ ul {
   display: inline-block;
   min-width: 130px;
   font-size: 1.1em;
-  letter-spacing: 1px;
+  letter-spacing: 1px; transition: color 0.5s;
 }
 
 .links {
+  transition: color 0.5s;
   display: block;
   text-align: center;
 }

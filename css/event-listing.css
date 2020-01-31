@@ -351,8 +351,8 @@ main {
 }
 
 .box__title-inner[data-hover] {
-  -webkit-text-stroke: 2px #000;
-  text-stroke: 2px #000;
+  -webkit-text-stroke: 2px #fff;
+  text-stroke: 2px #fff;
   -webkit-text-fill-color: transparent;
   text-fill-color: transparent;
   color: transparent;
@@ -368,9 +368,9 @@ main {
   white-space: nowrap;
   -webkit-text-stroke: 0;
   text-stroke: 0;
-  -webkit-text-fill-color: #000;
-  text-fill-color: #000;
-  color: #000;
+  -webkit-text-fill-color: #fff;
+  text-fill-color: #fff;
+  color: #fff;
   transition: all 0.3s;
 }
 
