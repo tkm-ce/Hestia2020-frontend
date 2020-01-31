@@ -145,7 +145,7 @@
 			item.addEventListener(clickEvent, function(ev) {
 				if(clickEvent === 'click') {
 					ev.preventDefault();
-					self._openItem(ev, item);
+					// self._openItem(ev, item);
 				}
 				else {
 					manageTouch();
