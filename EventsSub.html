@@ -6,6 +6,8 @@
     <title>
         { Event Name } | Hestia 20 - National Level Techno-Cultural Fest of TKM
     </title>
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+
     <meta
             name="description"
             content="Hestia 20 - National level Techno Cultural fest organized by TKM College of Engineering. Feb 27- March 1"
@@ -19,7 +21,7 @@
 
 
     <link rel="stylesheet" type="text/css" href="css/EventsSub.css"/>
-    <link rel="stylesheet" type="text/css" href="css/linkStyles.css"/>
+
     <link rel="stylesheet" type="text/css" href="css/common.css"/>
 
     <link rel="stylesheet" href="css/normalize.css"/>
@@ -86,44 +88,33 @@
     </symbol>
 </svg>
 <main>
-    <header class="custom-header">
-        <img
-                class="custom-logo"
-                src="http://hestia-old.thameeem.com/assets/front/img/logo.png"
-        />
-        <button class="btn btn--menu">
-            <svg class="icon icon--menu">
-                <use xlink:href="#icon-menu"></use>
-            </svg>
-        </button>
-    </header>
+
     <div style="width:100%;">
-        <section class="">
-            <nav class="links hestia-font">
+        <section>
+            <nav class="links hestia-font desktoponly" style="background-color:transparent !important;">
                 <a>EVENTS</a>
                 <a>SPONSORS</a>
-                <a><img
+                <a
+                ><img
                         style="max-height: 75px;position:relative;top:25px"
                         src="http://hestia-old.thameeem.com/assets/front/img/logo.png"
                 /></a>
                 <a>ABOUT</a>
                 <a>CONTACT</a>
             </nav>
+
+
+            <div class="mobileonly" style="width: 100%;padding:10px 20px;">
+                <a style="margin-right: 20px;">
+                    <img style="max-height: 65px;" src="http://hestia-old.thameeem.com/assets/front/img/logo.png"/></a>
+
+                <i class="material-icons"  style="cursor:pointer;color:white;font-size: 40px;float:right;margin:15px">
+                    menu
+                </i>
+            </div>
         </section>
     </div>
-    <nav class="menu">
-        <button class="btn btn--close">
-            <svg class="icon icon--cross">
-                <use xlink:href="#icon-cross"></use>
-            </svg>
-        </button>
-        <ul class="menu__inner">
-            <li class="menu__item"><a class="menu__link" href="#">Work</a></li>
-            <li class="menu__item"><a class="menu__link" href="#">Play</a></li>
-            <li class="menu__item"><a class="menu__link" href="#">Chat</a></li>
-            <li class="menu__item"><a class="menu__link" href="#">Party</a></li>
-        </ul>
-    </nav>
+
     <div class="">
         <div class="grid" style="margin-top: 100px;padding-bottom: 100px">
             <a class="grid__item" href="#preview-8">

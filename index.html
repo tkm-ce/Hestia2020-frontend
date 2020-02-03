@@ -21,10 +21,13 @@
     <link rel="stylesheet" type="text/css" href="css/Home.css"/>
     <link rel="stylesheet" type="text/css" href="css/common.css"/>
     <link rel="stylesheet" href="css/normalize.css"/>
-    <link rel="stylesheet" href="css/pater.css"/>
-    <link rel="stylesheet" href="css/revealer.css"/>
+
 
     <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+
+
+
+
 
     <script>
         document.documentElement.className = "js";
@@ -103,9 +106,10 @@
                 <a style="margin-right: 20px;">
                     <img style="max-height: 65px;" src="http://hestia-old.thameeem.com/assets/front/img/logo.png"/></a>
 
-                <i class="material-icons"  style="cursor:pointer;font-size: 40px;float:right;margin:15px">
+                <i class="material-icons btn--menu"  style="cursor:pointer;font-size: 40px;float:right;margin:15px">
                     menu
                 </i>
+
             </div>
         </section>
 
@@ -136,7 +140,6 @@
 
 
     </div>
-
     <div class="content">
         <canvas class="landscape"></canvas>
         <script id="custom-vertex" type="x-shader/x-vertex">
@@ -415,19 +418,7 @@
         </div>
     </div>
     <div class="overlay"></div>
-    <nav class="menu">
-        <button class="btn btn--close">
-            <svg class="icon icon--cross">
-                <use xlink:href="#icon-cross"></use>
-            </svg>
-        </button>
-        <ul class="menu__inner">
-            <li class="menu__item"><a class="menu__link" href="#">Work</a></li>
-            <li class="menu__item"><a class="menu__link" href="#">Play</a></li>
-            <li class="menu__item"><a class="menu__link" href="#">Chat</a></li>
-            <li class="menu__item"><a class="menu__link" href="#">Party</a></li>
-        </ul>
-    </nav>
+
 </main>
 <script src="js/home/vendor/three.min.js"></script>
 <script src="js/home/vendor/Sky.js"></script>
@@ -436,45 +427,10 @@
 <script src="js/home/vendor/TweenMax.min.js"></script>
 <script src="js/home/demo2.js"></script>
 <script src="js/home/anime.min.js"></script>
-<script src="js/home/main.js"></script>
-<script>
-    (function () {
-        var navEl = document.querySelector("nav.menu"),
-            revealer = new RevealFx(navEl),
-            closeCtrl = navEl.querySelector(".btn--close");
 
-        document
-            .querySelector(".btn--menu")
-            .addEventListener("click", function () {
-                revealer.reveal({
-                    bgcolor: "#7f40f1",
-                    duration: 400,
-                    easing: "easeInOutCubic",
-                    onCover: function (contentEl, revealerEl) {
-                        navEl.classList.add("menu--open");
-                        contentEl.style.opacity = 1;
-                    },
-                    onComplete: function () {
-                        closeCtrl.addEventListener("click", closeMenu);
-                    }
-                });
-            });
 
-        function closeMenu() {
-            closeCtrl.removeEventListener("click", closeMenu);
-            navEl.classList.remove("menu--open");
-            revealer.reveal({
-                bgcolor: "#7f40f1",
-                duration: 400,
-                easing: "easeInOutCubic",
-                onCover: function (contentEl, revealerEl) {
-                    navEl.classList.remove("menu--open");
-                    contentEl.style.opacity = 0;
-                }
-            });
-        }
-    })();
-</script>
+
+
 </body>
 
 </html>
