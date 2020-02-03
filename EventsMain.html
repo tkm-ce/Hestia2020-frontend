@@ -20,7 +20,8 @@
     />
     <link rel="shortcut icon" href="img/hestia-icon.png" />
     <link rel="stylesheet" type="text/css" href="css/EventsMain.css" />
-    <link rel="stylesheet" type="text/css" href="css/common.css" />
+    <link rel="stylesheet" type="text/css" href="css/common.css" />    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+
     <script>
       document.documentElement.className = "js";
       var supportsCssVars = function() {
@@ -85,20 +86,32 @@
     </svg>
     <main>
       <div style="width:100%;position: absolute;top:0;z-index: 100">
-        <section class="">
-          <nav class="links hestia-font">
+        <section>
+          <nav class="links hestia-font desktoponly" style="background-color:transparent !important;">
             <a>EVENTS</a>
             <a>SPONSORS</a>
-            <a><img
+            <a
+            ><img
                     style="max-height: 75px;position:relative;top:25px"
                     src="http://hestia-old.thameeem.com/assets/front/img/logo.png"
             /></a>
             <a>ABOUT</a>
             <a>CONTACT</a>
           </nav>
+
+
+          <div class="mobileonly" style="width: 100%;padding:10px 20px;">
+            <a style="margin-right: 20px;">
+              <img style="max-height: 65px;" src="http://hestia-old.thameeem.com/assets/front/img/logo.png"/></a>
+
+            <i class="material-icons"  style="cursor:pointer;font-size: 40px;float:right;margin:15px">
+              menu
+            </i>
+          </div>
         </section>
+
       </div>
-      <nav class="menu" style="margin-top: 80px;background-color: transparent;height: 550px"  >
+      <nav class="menu" style="background-color: transparent;height: 550px"  >
         <div class="menu__item">
           <span class="menu__item-number">01</span>
           <span class="menu__item-textwrap"
