@@ -22,6 +22,9 @@
     <link rel="stylesheet" type="text/css" href="css/common.css"/>
     <link rel="stylesheet" href="css/normalize.css"/>
 
+	<link rel="stylesheet" href="css/pater.css" />
+	<link rel="stylesheet" href="css/revealer.css" />
+	<link rel="stylesheet" href="css/menu.css">
 
     <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
 
@@ -76,12 +79,10 @@
                 d="M17.6,1H0V0h17.6V1z M17.6,4.3h-12v1h12V4.3z M17.6,8.9h-6.9v1h6.9V8.9z"
         />
     </symbol>
-    <symbol id="icon-cross" viewBox="0 0 10.2 10.2">
+    <svg id="icon-cross" viewBox="0 0 10.2 10.2">
         <title>cross</title>
-        <path
-                d="M5.8,5.1l4.4,4.4l-0.7,0.7L5.1,5.8l-4.4,4.4L0,9.5l4.4-4.4L0,0.7L0.7,0l4.4,4.4L9.5,0l0.7,0.7L5.8,5.1z"
-        />
-    </symbol>
+        <path d="M5.8,5.1l4.4,4.4l-0.7,0.7L5.1,5.8l-4.4,4.4L0,9.5l4.4-4.4L0,0.7L0.7,0l4.4,4.4L9.5,0l0.7,0.7L5.8,5.1z"></path>
+    </svg>
 </svg>
 <main>
 
@@ -111,7 +112,8 @@
                 </i>
 
             </div>
-        </section>
+		</section>
+		
 
         <div>
             <p class="hestia-font hestia-main " style="margin-bottom: 10px">
@@ -139,7 +141,20 @@
 
 
 
-    </div>
+	</div>
+	<nav class="menu">
+		<button class="btn btn--close">
+		  <svg class="icon icon--cross">
+			<use xlink:href="#icon-cross"></use>
+		  </svg>
+		</button>
+		<ul class="menu__inner">
+		  <li class="menu__item"><a class="menu__link" href="#">Work</a></li>
+		  <li class="menu__item"><a class="menu__link" href="#">Play</a></li>
+		  <li class="menu__item"><a class="menu__link" href="#">Chat</a></li>
+		  <li class="menu__item"><a class="menu__link" href="#">Party</a></li>
+		</ul>
+	</nav>
     <div class="content">
         <canvas class="landscape"></canvas>
         <script id="custom-vertex" type="x-shader/x-vertex">
@@ -427,6 +442,46 @@
 <script src="js/home/vendor/TweenMax.min.js"></script>
 <script src="js/home/demo2.js"></script>
 <script src="js/home/anime.min.js"></script>
+<script src="js/home/main.js"></script>
+
+<script>
+	(function() {
+	  var navEl = document.querySelector("nav.menu"),
+		revealer = new RevealFx(navEl),
+		closeCtrl = navEl.querySelector(".btn--close");
+
+	  document
+		.querySelector(".btn--menu")
+		.addEventListener("click", function() {
+		  revealer.reveal({
+			bgcolor: "#7f40f1",
+			duration: 400,
+			easing: "easeInOutCubic",
+			onCover: function(contentEl, revealerEl) {
+			  navEl.classList.add("menu--open");
+			  contentEl.style.opacity = 1;
+			},
+			onComplete: function() {
+			  closeCtrl.addEventListener("click", closeMenu);
+			}
+		  });
+		});
+
+	  function closeMenu() {
+		closeCtrl.removeEventListener("click", closeMenu);
+		navEl.classList.remove("menu--open");
+		revealer.reveal({
+		  bgcolor: "#7f40f1",
+		  duration: 400,
+		  easing: "easeInOutCubic",
+		  onCover: function(contentEl, revealerEl) {
+			navEl.classList.remove("menu--open");
+			contentEl.style.opacity = 0;
+		  }
+		});
+	  }
+	})();
+  </script>
 
 
 
