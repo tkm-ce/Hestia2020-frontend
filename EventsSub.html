@@ -117,19 +117,21 @@
         </section>
     </div>
 
-    <nav class="menu">
+    <nav class="Mobilemenu">
         <button class="btn btn--close">
-          <svg class="icon icon--cross">
-          <use xlink:href="#icon-cross"></use>
-          </svg>
+            <svg class="icon icon--cross">
+                <use xlink:href="#icon-cross"></use>
+            </svg>
         </button>
-        <ul class="menu__inner">
-          <li class="menu__item"><a class="menu__link" href="#">Work</a></li>
-          <li class="menu__item"><a class="menu__link" href="#">Play</a></li>
-          <li class="menu__item"><a class="menu__link" href="#">Chat</a></li>
-          <li class="menu__item"><a class="menu__link" href="#">Party</a></li>
+        <ul class="Mobilemenu__inner">
+            <li class="Mobilemenu__item"><a class="Mobilemenu__link" href="#">Work</a></li>
+            <li class="Mobilemenu__item"><a class="Mobilemenu__link" href="#">Play</a></li>
+            <li class="Mobilemenu__item"><a class="Mobilemenu__link" href="#">Chat</a></li>
+            <li class="Mobilemenu__item"><a class="Mobilemenu__link" href="#">Party</a></li>
         </ul>
-      </nav>
+    </nav>
+
+
 
     <div class="">
         <div class="grid" style="margin-top: 100px;padding-bottom: 100px">
@@ -375,7 +377,7 @@
 <script src="js/home/main.js"></script>
 <script>
     (function () {
-        var navEl = document.querySelector("nav.menu"),
+        var navEl = document.querySelector("nav.Mobilemenu"),
             revealer = new RevealFx(navEl),
             closeCtrl = navEl.querySelector(".btn--close");
 
@@ -383,7 +385,7 @@
             .querySelector(".btn--menu")
             .addEventListener("click", function () {
                 revealer.reveal({
-                    bgcolor: "#7f40f1",
+                    bgcolor: "#101010",
                     duration: 400,
                     easing: "easeInOutCubic",
                     onCover: function (contentEl, revealerEl) {
@@ -400,7 +402,7 @@
             closeCtrl.removeEventListener("click", closeMenu);
             navEl.classList.remove("menu--open");
             revealer.reveal({
-                bgcolor: "#7f40f1",
+                bgcolor: "#101010",
                 duration: 400,
                 easing: "easeInOutCubic",
                 onCover: function (contentEl, revealerEl) {
