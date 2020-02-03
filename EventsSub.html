@@ -27,6 +27,8 @@
     <link rel="stylesheet" href="css/normalize.css"/>
     <link rel="stylesheet" href="css/pater.css"/>
     <link rel="stylesheet" href="css/revealer.css"/>
+    <link rel="stylesheet" href="css/menu.css">
+
     <script>
         document.documentElement.className = "js";
         var supportsCssVars = function () {
@@ -108,12 +110,26 @@
                 <a style="margin-right: 20px;">
                     <img style="max-height: 65px;" src="http://hestia-old.thameeem.com/assets/front/img/logo.png"/></a>
 
-                <i class="material-icons"  style="cursor:pointer;color:white;font-size: 40px;float:right;margin:15px">
+                <i class="material-icons btn--menu"  style="cursor:pointer;color:white;font-size: 40px;float:right;margin:15px">
                     menu
                 </i>
             </div>
         </section>
     </div>
+
+    <nav class="menu">
+        <button class="btn btn--close">
+          <svg class="icon icon--cross">
+          <use xlink:href="#icon-cross"></use>
+          </svg>
+        </button>
+        <ul class="menu__inner">
+          <li class="menu__item"><a class="menu__link" href="#">Work</a></li>
+          <li class="menu__item"><a class="menu__link" href="#">Play</a></li>
+          <li class="menu__item"><a class="menu__link" href="#">Chat</a></li>
+          <li class="menu__item"><a class="menu__link" href="#">Party</a></li>
+        </ul>
+      </nav>
 
     <div class="">
         <div class="grid" style="margin-top: 100px;padding-bottom: 100px">
