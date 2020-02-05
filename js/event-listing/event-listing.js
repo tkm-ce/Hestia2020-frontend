@@ -274,6 +274,9 @@
             allowTilt = false;
             this.overlay.show(contentItem);
             // "explode" grid..
+            document.querySelectorAll('.box__text-inner').forEach(el => {
+                el.classList.add('show-button');
+            });
             for (let item of this.items) {
                 for (let key in item.DOM.animatable) {
                     const el = item.DOM.animatable[key];
@@ -318,7 +321,9 @@
             if ( !this.isPreviewOpen ) return;
             this.isPreviewOpen = false;
             this.overlay.hide();
-
+            document.querySelectorAll('.box__text-inner').forEach(el => {
+                el.classList.remove('show-button');
+            });
             for (let item of this.items) {
                 for (let key in item.DOM.animatable) {
                     const el = item.DOM.animatable[key];
