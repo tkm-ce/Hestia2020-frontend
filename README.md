@@ -18,3 +18,24 @@
 ## ___View Android App___
 #### _General Android Application : [Hestia'20](https://play.google.com/store/apps/details?id=live.hestia.app)_
 #### _Admin App for volunteering : [View](https://www.hestia.live/admin_app)_
+
+## ___Sample Views___
+
+#### _Loader_
+
+![Home](https://raw.githubusercontent.com/AkmarNafi/Hestia-frontend/master/git_img/1.png)
+
+#### _Home_
+![Home](https://raw.githubusercontent.com/AkmarNafi/Hestia-frontend/master/git_img/2.png)
+
+#### _Event Menu_
+
+![Home](https://raw.githubusercontent.com/AkmarNafi/Hestia-frontend/master/git_img/3.png)
+
+#### _Event Listing_
+
+![Home](https://raw.githubusercontent.com/AkmarNafi/Hestia-frontend/master/git_img/4.png)
+
+![Home](https://raw.githubusercontent.com/AkmarNafi/Hestia-frontend/master/git_img/5.png)
+
+![Home](https://raw.githubusercontent.com/AkmarNafi/Hestia-frontend/master/git_img/6.png)
