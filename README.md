@@ -7,13 +7,8 @@
 #### _1 - Clone Project_
 >_git clone https://github.com/AkmarNafi/Hestia-frontend.git_
 #### _2 - Backend Integration_
->_View backend integrated code at [https://github.com/rafi0486/hestia2020](https://github.com/rafi0486/hestia2020)_
 
-##### _Backend Specifications_
-###### _Framework : Codeigniter [https://codeigniter.com/](https://codeigniter.com/)_
-###### _Auth: Google Auth [https://developers.google.com/identity/protocols/oauth2](https://developers.google.com/identity/protocols/oauth2)_
-###### _Mail Service : Sendgrid [http://sendgrid.com/](http://sendgrid.com/)_
-###### _API : Rest API_
+>_View backend integrated code at [https://github.com/rafi0486/hestia2020](https://github.com/rafi0486/hestia2020) or at https://github.com/tkm-ce/hestia2020 _
 
 ## ___View Android App___
 #### _General Android Application : [Hestia'20](https://play.google.com/store/apps/details?id=live.hestia.app)_
